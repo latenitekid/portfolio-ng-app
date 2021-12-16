@@ -1,7 +1,7 @@
 <div class="nav-content">
     <div class="line-thing"></div>
     <ul class="button-links">
-        <li><button [ngClass]="{'selected-route': router.url == '/'}" (click)="navigate('/')">Home</button></li>
+        <li><button [ngClass]="{'selected-route': activeRoute == '/'}" (click)="navigate('/')">Home</button></li>
         <li><button [ngClass]="{'selected-route': activeRoute == '/portfolio'}"(click)="navigate('portfolio')">Portfolio</button></li>
         <li><button [ngClass]="{'selected-route': activeRoute == '/about'}"(click)="navigate('about')">About</button></li>
         <li><button [ngClass]="{'selected-route': activeRoute == '/contact'}"(click)="navigate('contact')">Contact</button></li>
