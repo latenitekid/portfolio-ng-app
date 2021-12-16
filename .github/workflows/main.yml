@@ -40,5 +40,5 @@ jobs:
           server: nlmiller.com
           username: nick
           password: ${{ secrets.ftp_password }}
-          local-dir: dist/
+          local-dir: dist/portfolio/
           server-dir: /var/www/html/nlmiller.com/
