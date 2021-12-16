@@ -28,13 +28,13 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: Install dependencies
+      - name: Install npm dependencies
         run: npm install
 
-      - name: Build the ng app
-        run: ng b --prod
+      - name: Build the app
+        run: npm run build
 
-      - name: Deploy to DO Server
+      - name: Deploy to DigitalOcean server
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: nlmiller.com
