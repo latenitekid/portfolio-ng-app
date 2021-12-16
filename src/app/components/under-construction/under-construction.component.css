@@ -1,0 +1,20 @@
+.content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    border-radius: 10px;
+}
+
+::ng-deep app-under-construction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::ng-deep body {
+    background-color: grey;
+}

@@ -1,0 +1,84 @@
+:host {
+    background-color: #302d6e;
+    display: inline;
+    width: 200px;
+    color: #222;
+    height: 100%;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-content {
+    padding: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav-content button {
+    background-color: #302d6e;
+    border: none;
+    color: #555;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    top: 0px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: xx-large;
+    transition: 0.5s;
+}
+
+.nav-content button:hover {
+    background-color: #5752c7;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.nav-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content ul li {
+    margin: 0;
+}
+
+.button-links {
+    flex-grow: 2;
+}
+
+.icons {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.icons a {
+    color: #ccc;
+}
+
+.icons a:visited {
+    color: #555;
+}
+
+.icons a:hover {
+    color: white;
+}
+
+.line-thing {
+    border-left: 2px solid #555;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selected-route {
+    background-color: grey !important;
+}
