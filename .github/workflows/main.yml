@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build/Deploy Angular App
 
 # Controls when the workflow will run
 on:
@@ -23,8 +23,22 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
       - name: Install dependencies
         run: npm install
-        
+
       - name: Build the ng app
         run: ng b --prod
+
+      - name: Deploy to DO Server
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        with:
+          server: nlmiller.com
+          username: nick
+          password: ${{ secrets.ftp_password }}
+          port: 22
+          server-dir: /var/www/html/nlmiller.com/
