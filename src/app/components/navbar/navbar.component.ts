@@ -18,7 +18,6 @@ export class NavbarComponent implements OnInit {
 
   navigate(dest: string) {
     this.router.navigate([dest]);
-    console.log(this.router.url);
   }
 
 }
