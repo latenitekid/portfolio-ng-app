@@ -1,3 +1,5 @@
+![Build Status](https://github.com/latenitekid/portfolio-ng-app/actions/workflows/main.yml/badge.svg)
+
 # Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
