@@ -22,7 +22,7 @@
 .nav-content button {
     background-color: #302d6e;
     border: none;
-    color: #555;
+    color: #AAA;
     width: 100%;
     margin: 0;
     height: 100%;
@@ -80,5 +80,6 @@
 }
 
 .selected-route {
-    background-color: grey !important;
+    background-color: #222 !important;
+    color: white !important;
 }
